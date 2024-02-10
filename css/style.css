@@ -1,0 +1,539 @@
+:root{
+	--primary-color: #3546AB;
+	
+}
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	background-color: #DEE2E9;
+	
+
+}
+/* ################################# */
+.budget-wrapper{
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.budget-wrapper-content {
+    background-color: #EDF0F5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 27px;
+}
+.dashboard-section {
+    width: 100%;
+    background-color: #E5EAF1;
+    padding-inline: 50px;
+    border-radius: 11px 0 0 11px;
+    height: 100%;
+}
+.dashboard-section .logo-block {
+	display: flex;
+	justify-content: center;
+	
+}
+.dashboard-section .menu-section ul li {
+    list-style: none;
+    padding-block: 25px;
+    border-bottom: 1px solid #c5c5c5;
+    text-align: center;
+}
+.dashboard-section .menu-section ul li:last-child{
+	border-bottom: none;
+}
+.dashboard-section .menu-section ul li .active{
+	color: #1f1717d9;
+}
+.dashboard-section .menu-section ul li .active i{
+	color: #1f1717d9;
+}
+.dashboard-section .menu-section ul li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-family: inherit;
+    font-weight: 400;
+     color: #7E8CAC;
+     transition: 0.5s;
+}
+.dashboard-section .menu-section ul li:hover a{
+	color: #1f1717d9;
+}
+.dashboard-section .menu-section ul li a i{
+	 color: #7E8CAC;
+	 transition: 0.5s;
+}
+.dashboard-section .menu-section ul li:hover a i{
+	color: #1f1717d9;
+}
+
+
+/* #####################################
+			OVER VIEW SECTION
+######################################## */
+
+
+.overview-section {
+    width: 100%;
+    background-color: #fff;
+    padding-inline: 38px;
+    padding-block: 21px;
+    height: 100%;
+    box-shadow: rgb(0 0 0 / 12%) -4px 2px 15px;
+}
+.overview-section header {
+    border-bottom: 1px solid #ddd;
+    padding-block-end: 25px;
+}
+.overview-section .heading h1 {
+    color: var(--primary-color);
+    font-size: 34px;
+    font-weight: 600;
+    font-family: inherit;
+    margin: 0;
+}
+.overview-section .heading p {
+    color: #7E8CAC;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+    margin: 0;
+
+}
+.overview-section .profile-block a i{
+	color: #7E8CAC;
+	font-size: 21px;
+}
+.overview-section .profile-block .image {
+    width: 36px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+.overview-section .profile-block .image img{
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+
+}
+/* #####################################
+			DAILY TRANSACTION 
+######################################## */
+.transaction-wrapper{
+	margin-top: 35px;
+}
+.daily-transaction-wrapper .title-block .title h2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    font-family: inherit;
+}
+.daily-transaction-wrapper .title-block .add-icon {
+    width: 34px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #3546AB;
+    box-shadow: rgb(0 0 0 / 60%) 0px 0px 39px -2px;
+}
+.daily-transaction-wrapper .title-block .add-icon i {
+    color: #fff;
+    font-size: 23px;
+}
+.amount-block{
+	margin-top: 25px;
+}
+.amount-block .block p {
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0;
+    font-family: inherit;
+}
+.amount-block .block span {
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+    margin: 0;
+    font-family: inherit;
+}
+.amount-block .block:nth-child(3) span {
+    color: black;
+    font-weight: 700;
+}
+
+
+.transaction-history {
+    margin-top: 42px;
+}
+.transaction-history .transaction-history-title .title h2 {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    font-family: inherit;
+}
+.transaction-history h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #44444A;
+    margin: 0;
+    padding-block-start: 8px;
+    font-family: inherit;
+}
+
+
+
+.transaction-profile{
+	margin-top: 35px;
+}
+.transaction-profile .profile {
+    margin-bottom: 25px;
+}
+.transaction-profile .profile .name h2 {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 0;
+    font-family: inherit;
+    padding-bottom: 7px;
+}
+.transaction-profile .profile .name p {
+    font-size: 14px;
+    color: #222;
+    font-weight: 400;
+    margin: 0;
+    font-family: inherit;
+}
+
+.transaction-profile .profile .payment h2 {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 0;
+    font-family: inherit;
+}
+.transaction-profile .profile .payment p {
+    font-size: 14px;
+    color: #222;
+    font-weight: 400;
+    margin: 0;
+    font-family: inherit;
+}
+.transaction-profile .profile:last-child{
+	margin-bottom: 0;
+}
+.transaction-profile .profile:nth-child(2) .payment h2{
+	color: #F0582E;
+}
+.transaction-profile .profile:nth-child(3) .payment h2{
+	color: #F0582E;
+}
+
+
+
+.monthly-transaction h2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    font-family: inherit;
+    margin-bottom: 28px;
+}
+.chart-wrapper .chart-block {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+}
+.chart-wrapper .col-lg-6:nth-child(2) .chart-block .expence-chart p{
+	color: #3546AB;
+	
+}
+.chart-wrapper .col-lg-6:nth-child(2) .chart-block  .chart span{
+	background-color: #3546AB;
+}
+.chart-wrapper .col-lg-6:nth-child(2) .chart-block .amount h4{
+	color: #3546AB;
+}
+.chart-wrapper .chart-block .expence-chart p {
+    color: #F0582E;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+.chart-wrapper .chart-block .chart {
+    margin-block: 28px;
+}
+.chart-wrapper .chart-block .chart span{
+	width: 5px; 
+	height: 50px;
+	border-radius: 50px;
+	background-color: #F0582E;
+}
+.chart-wrapper .chart-block .amount h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    font-family: inherit;
+    margin: 0;
+    padding-block-end: 3px;
+}
+
+.chart-wrapper .chart-block .amount h4{
+	font-size: 14px;
+	font-weight: 400;
+	color: #F0582E;
+	font-family: inherit;
+	margin: 0;
+}
+
+
+.expence-by-category h2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    font-family: inherit;
+    margin-bottom: 28px;
+    margin-top: 37px;
+}
+.category-block .block {
+    background-color: #FAF7F5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-block: 20px;
+    padding-inline: 15px;
+    margin-bottom: 15px;
+}
+.category-block .block:nth-child(2) .rt-block .pie{
+	background-image: conic-gradient(#f0582e 47deg, #dcdcdc 0 360deg);
+}
+.category-block .block:nth-child(3) .rt-block .pie{
+	background-image: conic-gradient(#f0582e 47deg, #dcdcdc 0 360deg);
+}
+.category-block .block .rt-block .pie{
+	background-image: conic-gradient(#3546ab 120deg, #dcdcdc 0 360deg);
+	width: 30px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+}
+.category-block .block .rt-block .title p {
+    margin: 0;
+    font-size: 13px;
+}
+.category-block .block .rt-block .title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+}
+.category-block .block .lt-block h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 799px){
+.dashboard-section .menu-section ul li {
+    list-style: none;
+    padding-block: 25px;
+    border-bottom: 1px solid #c5c5c5;
+    text-align: center;
+    background: #ffffff2e;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+@media only screen and (max-width: 767px){
+.overview-section .heading h1{
+    font-size: 25px;
+}
+.overview-section .heading p {
+    font-size: 14px;
+}
+.overview-section .profile-block a i {
+    color: #7E8CAC;
+    font-size: 19px;
+}
+.overview-section .profile-block .image {
+    width: 29px;
+}
+.overview-section{
+    padding-inline: 10px;
+}
+.heading{
+    max-width: 258px;
+}
+.daily-transaction-wrapper .title-block .title h2 {
+    font-size: 18px;
+}
+.daily-transaction-wrapper .title-block .add-icon{
+    width: 31px;
+}
+.amount-block.d-flex.justify-content-between.align-items-center {
+    justify-content: start!important;
+    gap: 50px!important;
+}
+.expence-by-category h2{
+    font-size: 19px;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 576px){
+.col-lg-6.col-md-12.mb-md-3.mb-sm-3{
+    margin-bottom: 10px;
+} 
+.col-lg-6.col-md-6.col-sm-12.mb-md-3.mb-sm-3{
+    margin-bottom: 20px;
+} 
+.dashboard-section .logo-block {
+    width: 100%;
+}
+.dashboard-section .logo-block img{
+    width: 28%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 485px){
+.amount-block.d-flex.justify-content-between.align-items-center {
+    justify-content: start!important;
+    gap: 36px!important;
+}
+.monthly-transaction h2 {
+    font-size: 17px;
+    margin-top: 31px;
+    margin-bottom: 12px;
+}
+.expence-by-category h2 {
+    font-size: 17px;
+}
+.transaction-profile .profile .payment h2 {
+    font-size: 14px;
+}
+.amount-block.d-flex.justify-content-between.align-items-center {
+    flex-direction: column;
+    align-items: start!important;
+    gap: 16px!important;
+}
+.amount-block {
+    margin-top: 12px;
+} 
+header.d-flex.align-items-center.justify-content-between{
+    flex-direction: column;
+    justify-content: start!important;
+    align-items: start!important;
+    gap: 13px;
+}
+.dashboard-section .menu-section ul li {
+    padding-block: 16px;
+}
+.dashboard-section .menu-section ul li:last-child {
+    border-bottom: 1px solid #c5c5c5;
+}
+.dashboard-section .menu-section ul li:active{
+    transform: scale(0.96);
+}
+.overview-section {
+    padding-inline: 10px;
+    border-radius: 4px;
+}
+
+
+
+}
+@media only screen and (max-width: 420px) {
+.chart-wrapper .chart-block .chart {
+    margin-block: 28px;
+    justify-content: center;
+}
+.chart-wrapper .chart-block{
+    text-align: center;
+}
+.dashboard-section .menu-section ul li {
+    padding-block: 15px;
+}
+.dashboard-section .logo-block {
+    width: 100%;
+}
+.dashboard-section .logo-block img{
+    width: 28%;
+}
+.dashboard-section {
+    padding-inline: 18px;
+}
+.expence-by-category h2{
+    margin-bottom: 14px;
+}
+.dashboard-section .logo-block img {
+    width: 23%;
+}
+.overview-section {
+    padding-inline: 10px;
+    border-radius: 4px;
+}
+.col-lg-10.col-md-12.col-sm-12.pe-lg-0.ps-lg-0.p-sm-0{
+    padding: 0;
+}
+.col-lg-10.col-md-12.col-sm-12.pe-lg-0.ps-lg-0{
+    padding: 0;
+}
+.col-lg-2.col-md-12.col-sm-12.pe-lg-0{
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
